@@ -271,8 +271,9 @@ async def channelname0(interaction: discord.Interaction, message: str):
 
     embed = discord.Embed(title="Sending Message to CHANNEL-NAME-0:", description=message, color=0x67ea94)
     embed.set_footer(text=f"{current_time}")
+    username_message = f"{str(interaction.user.name)}[D]: " + message
     await interaction.response.send_message(embed=embed)
-    discordtomesh.put(f"channel=0 {message}")
+    discordtomesh.put(f"channel=0 {username_message}")
 
 @client.tree.command(name="CHANNEL-NAME-1", description="Send a message in CHANNEL-NAME-1.")
 async def channelname1(interaction: discord.Interaction, message: str):
@@ -281,8 +282,9 @@ async def channelname1(interaction: discord.Interaction, message: str):
 
     embed = discord.Embed(title="Sending Message to CHANNEL-NAME-1:", description=message, color=0x67ea94)
     embed.set_footer(text=f"{current_time}")
+    username_message = f"{str(interaction.user.name)}[D]: " + message
     await interaction.response.send_message(embed=embed)
-    discordtomesh.put(f"channel=1 {message}")
+    discordtomesh.put(f"channel=1 {username_message}")
 
 @client.tree.command(name="CHANNEL-NAME-2", description="Send a message in CHANNEL-NAME-2.")
 async def channelname2(interaction: discord.Interaction, message: str):
@@ -291,8 +293,9 @@ async def channelname2(interaction: discord.Interaction, message: str):
 
     embed = discord.Embed(title="Sending Message to CHANNEL-NAME-2:", description=message, color=0x67ea94)
     embed.set_footer(text=f"{current_time}")
+    username_message = f"{str(interaction.user.name)}[D]: " + message
     await interaction.response.send_message(embed=embed)
-    discordtomesh.put(f"channel=2 {message}")
+    discordtomesh.put(f"channel=2 {username_message}")
 
 @client.tree.command(name="CHANNEL-NAME-3", description="Send a message in CHANNEL-NAME-3.")
 async def channelname3(interaction: discord.Interaction, message: str):
@@ -301,8 +304,9 @@ async def channelname3(interaction: discord.Interaction, message: str):
 
     embed = discord.Embed(title="Sending Message to CHANNEL-NAME-3:", description=message, color=0x67ea94)
     embed.set_footer(text=f"{current_time}")
+    username_message = f"{str(interaction.user.name)}[D]: " + message
     await interaction.response.send_message(embed=embed)
-    discordtomesh.put(f"channel=3 {message}")
+    discordtomesh.put(f"channel=3 {username_message}")
 
 @client.tree.command(name="CHANNEL-NAME-4", description="Send a message in CHANNEL-NAME-4.")
 async def channelname4(interaction: discord.Interaction, message: str):
@@ -311,8 +315,9 @@ async def channelname4(interaction: discord.Interaction, message: str):
 
     embed = discord.Embed(title="Sending Message to CHANNEL-NAME-4:", description=message, color=0x67ea94)
     embed.set_footer(text=f"{current_time}")
+    username_message = f"{str(interaction.user.name)}[D]: " + message
     await interaction.response.send_message(embed=embed)
-    discordtomesh.put(f"channel=4 {message}")
+    discordtomesh.put(f"channel=4 {username_message}")
 
 @client.tree.command(name="CHANNEL-NAME-5", description="Send a message in CHANNEL-NAME-5.")
 async def channelname5(interaction: discord.Interaction, message: str):
@@ -321,8 +326,9 @@ async def channelname5(interaction: discord.Interaction, message: str):
 
     embed = discord.Embed(title="Sending Message to CHANNEL-NAME-5:", description=message, color=0x67ea94)
     embed.set_footer(text=f"{current_time}")
+    username_message = f"{str(interaction.user.name)}[D]: " + message
     await interaction.response.send_message(embed=embed)
-    discordtomesh.put(f"channel=5 {message}")
+    discordtomesh.put(f"channel=5 {username_message}")
 
 @client.tree.command(name="CHANNEL-NAME-6", description="Send a message in CHANNEL-NAME-6.")
 async def channelname6(interaction: discord.Interaction, message: str):
@@ -331,8 +337,9 @@ async def channelname6(interaction: discord.Interaction, message: str):
 
     embed = discord.Embed(title="Sending Message to CHANNEL-NAME-6:", description=message, color=0x67ea94)
     embed.set_footer(text=f"{current_time}")
+    username_message = f"{str(interaction.user.name)}[D]: " + message
     await interaction.response.send_message(embed=embed)
-    discordtomesh.put(f"channel=6 {message}")
+    discordtomesh.put(f"channel=6 {username_message}")
 
 @client.tree.command(name="CHANNEL-NAME-7", description="Send a message in CHANNEL-NAME-7.")
 async def channelname7(interaction: discord.Interaction, message: str):
@@ -341,8 +348,9 @@ async def channelname7(interaction: discord.Interaction, message: str):
 
     embed = discord.Embed(title="Sending Message to CHANNEL-NAME-7:", description=message, color=0x67ea94)
     embed.set_footer(text=f"{current_time}")
+    username_message = f"{str(interaction.user.name)}[D]: " + message
     await interaction.response.send_message(embed=embed)
-    discordtomesh.put(f"channel=7 {message}")
+    discordtomesh.put(f"channel=7 {username_message}")
 
 @client.tree.command(name="active", description="Lists all active nodes.")
 async def active(interaction: discord.Interaction):
